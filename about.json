@@ -1,0 +1,26 @@
+{
+  "NAME": "Mahmud Hasan Munna",
+  "DESIGNATION": "Data Scientist",
+  "ADDRESS": {
+    "present": {
+      "description": "104/A PoolPar, Bot Tola, Mohammadpur, Dhaka-1207",
+      "cordinates": [23.41, 90.81]
+    },
+    "permanent": {
+      "description": "Mohanpur,Rajshahi-6220",
+      "cordinates": [23.41, 90.81]
+    }
+  },
+  "ABOUT": "Write a Paragraph",
+  "EMAIL": ["munna.ete15@gmail.com", "mahmud.hasan@sslwireless.com"],
+  "CELL": ["+8801742831013", "+8801521300515"],
+  "EDUCATION": {
+    "SSC": { "name": "Mohanpur Govt. High School", "session": "2008-2013" },
+    "HSC": { "name": "New Govt. Degree College", "session": "2013-2015" },
+    "UNDERGRAD": {
+      "name": "Rajshahi University of Enineering and Technology",
+      "session": "2013-2015",
+      "major": "BSc in Electronics & Telecommunication Engineering"
+    }
+  }
+}
