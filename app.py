@@ -6,7 +6,7 @@ import style
 
 app = dash.Dash(
     __name__,
-    external_stylesheets=[dbc.themes.BOOTSTRAP],
+    external_stylesheets=[dbc.themes.LITERA],
     meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
     ],
@@ -104,4 +104,4 @@ app.layout = dbc.Container(
 )
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=7000)
+    app.run_server(debug=True,host='0.0.0.0', port=7000)

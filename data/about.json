@@ -4,11 +4,11 @@
   "ADDRESS": {
     "present": {
       "description": "104/A PoolPar, Bot Tola, Mohammadpur, Dhaka-1207",
-      "cordinates": [23.41, 90.81]
+      "cordinates": [23.75174246075008, 90.36193797966322]
     },
     "permanent": {
       "description": "Mohanpur,Rajshahi-6220",
-      "cordinates": [23.41, 90.81]
+      "cordinates": [24.553010873553713, 88.6450574833361]
     }
   },
   "ABOUT": "Write a Paragraph",
