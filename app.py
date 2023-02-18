@@ -30,7 +30,7 @@ app.layout = dbc.Container(
                     # },
                 ),
                 dbc.Tab(
-                    html.I("To be updated"),
+                    # tabs.skill_tab,
                     label="Experience",
                     # active_label_style={
                     #     "backgroundColor": "#ffe9fb",
@@ -57,7 +57,7 @@ app.layout = dbc.Container(
                     # },
                 ),
                 dbc.Tab(
-                    html.I("To be updated"),
+                    tabs.skill_tab,
                     label="Skills",
                     # active_label_style={
                     #     "backgroundColor": "#ffe9fb",

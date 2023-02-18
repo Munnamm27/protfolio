@@ -130,6 +130,16 @@ section_details = {
     "overflow": "scroll"
 }
 
+
+designation={'border':'1px black solid','height':'175px','marginTop':'10px','padding':'10px',"border-radius": "10px","backgroundColor": "#EAF5FF",}
+
+
+card={ "width":'300px',
+    "backgroundColor":'lightblue',
+    "margin":'15px'
+       }
+
+
 section_graph = {
     "border": "1px white solid",
     "padding": "0px",

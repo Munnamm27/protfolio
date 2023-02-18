@@ -25,8 +25,20 @@ with open(image_path, "rb") as image_file:
 image = html.Img(src=f"data:image/jpg;base64,{encoded_image}")
 
 header = dbc.Row(html.H1(about_data['NAME']))
+
+
 about_tab = dbc.Row(
-    [   dbc.Col(image, md=3,),
+    [   dbc.Col( 
+    [ 
+        html.Div(style={'border':'1px black solid','height':'300px','marginTop':'10px'}),
+        html.Div(
+            [html.I("Curently Working As"),
+            html.H4("Data Scientist"),
+            html.H5("SSL Wirelsess"),
+            html.I("Standard Center, 27/1, New Eskaton Road, Dhaka-1000")],
+        style=st.designation),
+    ],md=3
+    ),
         dbc.Col(
         [
             dbc.Row(
@@ -49,4 +61,69 @@ about_tab = dbc.Row(
 
     ),
         ], align='left', justify='left'
+)
+
+
+
+skill_tab=dbc.Row( 
+    [ 
+        dbc.Col( 
+            [gs.skill_card("Languages",'''
+           - Python
+           - SQL
+            '''),
+            gs.skill_card("Analysis & Visualization",'''
+            - Pandas
+            - Dask 
+            - Matplotlib, 
+            - Seaborn 
+            - Plotly'''),
+            gs.skill_card("Dashboarding Tools",'''
+            - Plotly-Dash
+            - Streamlit 
+            - Power BI
+            '''),
+            ],md=3
+
+        ),
+        dbc.Col( 
+            [   gs.skill_card("Machine Learning",'''
+            - Supervised Learnng
+            - Clustering
+            - Scikit Learn
+            - Tensorflow
+            - DNN
+            - CNN
+            - RNN
+            - LSTM
+            - Transfer Learning
+            '''),
+                gs.skill_card("Feature Engineering",'''
+                - Outlier detection 
+                - Feature encoding
+                - Feature selection
+                - Null value handling
+                '''),
+                
+             
+             
+             ],md=3
+        ),
+        dbc.Col( 
+            [
+    gs.skill_card("Natural Language Processing",'''
+            - Bag of Words
+            - Word Embedding
+            - N-Grams
+            - Sentiment Analysis
+            - NER 
+            - HuggingFace Models
+    '''),
+    gs.skill_card("Deployment & API",'''
+    - Docker
+    - FastAPI
+    - Flask''')],md=3
+        ),
+
+    ],justify='center'
 )
