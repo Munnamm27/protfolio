@@ -24,7 +24,7 @@ with open(image_path, "rb") as image_file:
     encoded_image = base64.b64encode(image_file.read()).decode()
 image = html.Img(src=f"data:image/jpg;base64,{encoded_image}")
 
-header = dbc.Row(html.H1(about_data['NAME']))
+header = dbc.Row(html.H1(about_data['NAME'],style={'color':'white'}))
 
 
 about_tab = dbc.Row(
@@ -75,7 +75,7 @@ skill_tab=dbc.Row(
             gs.skill_card("Analysis & Visualization",'''
             - Pandas
             - Dask 
-            - Matplotlib, 
+            - Matplotlib 
             - Seaborn 
             - Plotly'''),
             gs.skill_card("Dashboarding Tools",'''
@@ -127,3 +127,18 @@ skill_tab=dbc.Row(
 
     ],justify='center'
 )
+
+
+education_tab=[dbc.Row( 
+    [ 
+        dbc.Col( gs.edu_card("BSc","Rajshahi University of Enginnering & Technology","Major: Electronics and Telecommunication Engineering","2021"),md=5 ),
+        dbc.Col( gs.edu_card("HSC","New Govt. Degree College, Rajshahi","Major: Science","2015"),md=5 ),
+    ],justify='center'
+),
+
+dbc.Row( 
+    [ 
+        dbc.Col( gs.edu_card("SSC","Mohanpur Govt. High School, Rajshahi","Major: Science","2013"),md=5 ),
+    ],justify='center'
+),
+]

@@ -41,9 +41,9 @@ def get_map(pre_lat,pre_lon,per_lat,per_lon,pre_full,per_full):
         legend=dict(
         orientation="h",
         yanchor="auto",
-        y=1,
+        y=-0,
         xanchor="auto",
-        x=1
+        x=-0
     ),
         mapbox=dict(
         accesstoken="pk.eyJ1IjoibXVubmEtMTgyNSIsImEiOiJjbGNvaGhxMW0xajdsM3ltcWRzcndzcDN5In0.yt531xalbnEhc3HPRTzZkw",
@@ -69,6 +69,30 @@ def skill_card(title,skillset):
             html.H6(title, className="card-title text-center"),
             dcc.Markdown(
                 skillset,style={'backgroundColor':'lightgreen','margin':'5px','padding':'5px',"border-radius": "4px"}
+            ),
+        ]
+    ),
+    style={
+    "backgroundColor":'lightcyan',
+    "margin":'15px'
+       },
+)
+    return cards
+
+
+def edu_card(title,inst,year,result):
+    cards = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H5(title, className="card-title text-center"),
+            html.Div(
+                [html.H6(f"{inst}"),
+                html.P(f"{year}"),
+                html.P(f"Passing Year: {result}"),
+                ]
+            
+
+            ,style={'backgroundColor':'lightgreen','margin':'5px','padding':'5px',"border-radius": "4px",'textAlign':'center'}
             ),
         ]
     ),

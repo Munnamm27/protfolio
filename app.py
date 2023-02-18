@@ -66,7 +66,7 @@ app.layout = dbc.Container(
                     # },
                 ),
                 dbc.Tab(
-                    html.I("To be updated"),
+                    tabs.education_tab,
                     label="Education",
                     # active_label_style={
                     #     "backgroundColor": "#ffe9fb",
@@ -97,7 +97,7 @@ app.layout = dbc.Container(
     ],
     fluid=False,
     style={
-        # "backgroundColor": "#ffe9fb",
+        "backgroundColor": "#212121",
         "border": "3px black solid",
         "border-radius": "5px",
     },
